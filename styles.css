@@ -1,0 +1,63 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto Condesed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* DEIXANDO ATRAS DE TODOS*/
+    object-fit: cover; /*COBRIR TODA A TELA*/
+    filter: brightness(40%); /*ESCURECENDO IMGAGEM*/
+}
+.container {
+    text-align: center;
+}
+
+.question {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+h1 {
+    color: rgba(250, 235, 215, 0.89);
+    opacity: 0.6;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 30px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(100, 92, 92);
+    opacity: 0.6;
+    color: rgb(247, 246, 246);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a4a8a4da;
+}
+
+#movingButton {
+    left: 50%;
+    padding: 10px 30px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: left 0.3s, top 0.3s;
+}
