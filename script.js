@@ -1,4 +1,3 @@
-// Seleciona o botão "NÃO" usando o ID
 const movingButton = document.getElementById('movingButton');
 
 // Adiciona um evento de mouseover para mover o botão quando o cursor passa por cima
@@ -16,6 +15,24 @@ movingButton.addEventListener('mouseover', () => {
     movingButton.style.left = `${randomX}px`;
     movingButton.style.top = `${randomY}px`;
 });
+
+
+document.getElementById('movingButton').addEventListener('click', function() {
+    // Obter a largura e altura da janela
+    var windowWidth = window.innerWidth;
+    var windowHeight = window.innerHeight;
+
+    // Gerar posição aleatória
+    let randomX = Math.random() * (windowWidth - this.offsetWidth);
+    let randomY = Math.random() * (windowHeight - this.offsetHeight);
+
+
+    // Aplicar a nova posição ao botão
+    this.style.position = 'absolute';  // Certifique-se que o botão esteja posicionado de forma absoluta
+    this.style.left = randomX + 'px';
+    this.style.top = randomY + 'px';
+});
+
 
 const button2 = document.getElementById('redirectButton');
 
