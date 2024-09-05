@@ -17,10 +17,12 @@ movingButton.addEventListener('mouseover', () => {
 });
 
 
-document.getElementById('movingButton').addEventListener('click', function() {
+document.getElementById('movingButton').addEventListener('click', function () {
     // Obter a largura e altura da janela
+
     let windowWidth = window.innerWidth;
     let windowHeight = window.innerHeight;
+
 
     // Gerar posição aleatória
     let randomX = Math.random() * (windowWidth - this.offsetWidth);
@@ -34,8 +36,8 @@ document.getElementById('movingButton').addEventListener('click', function() {
 });
 
 
-const button2 = document.getElementById('redirectButton');
+    const button2 = document.getElementById('redirectButton');
 
-button2.addEventListener('click', () => {
-    window.location.href = 'https://www.tiktok.com/@2jin__/video/7186794110949379333?lang=pt-BR&q=te%20amo%20meme&t=1724976239767';
-});
+    button2.addEventListener('click', () => {
+        window.location.href = 'https://www.tiktok.com/@2jin__/video/7186794110949379333?lang=pt-BR&q=te%20amo%20meme&t=1724976239767';
+    });
